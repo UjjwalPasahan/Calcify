@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000; // Use a different port than your fronten
 
 // Add these middleware
 app.use(cors({
-  origin: "*", // Your frontend URL
+  origin: "https://calcify-fmqtcy31p-ujjwalpasahans-projects.vercel.app", // Your frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
