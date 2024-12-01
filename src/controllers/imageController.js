@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 class ImageController {
   constructor() {
-    this.genAI = new GoogleGenerativeAI('AIzaSyD4kn7-TEX8KCYaT-DA5B3lg4xDUpWkitM');
+    this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   }
 
   async analyzeImage(req, res) {
